@@ -17,23 +17,17 @@ public class PassengersService {
 	public void addPassenger(List<Passengers> passengerlist)
 	{
 		passengerlist.forEach(passenger-> repo.save(passenger));
-		
-		
 	}
 
 	public void addPassengers(Passengers thepass) {
-		
 		repo.save(thepass);
-		
 	}
 
 	public void updatePassengers(List<Passengers> listofPassengers) {
-		// TODO Auto-generated method stub
 		listofPassengers.forEach(passenger-> repo.save(passenger));
 	}
 
 	public void deletePassenegrById(Integer pid) {
-		// TODO Auto-generated method stub
 		repo.deleteById(pid);
 	}
 	
